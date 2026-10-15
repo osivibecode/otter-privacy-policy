@@ -68,10 +68,11 @@
     <p class="update-date">Effective Date: October 15, 2026</p>
 
     <div class="callout">
-        <strong>In short:</strong> Otter has no accounts, no ads, no analytics and no crash reporting,
-        and it sends nothing to OsiVibeCode. Your browsing data, downloads, bookmarks, PIN and settings
-        stay on your device. Pages you visit and video files you download come directly from the sites
-        you choose. Some Android settings can share page addresses with Google; see section 4.
+        <strong>In short:</strong> Otter has no accounts, no ads and no analytics. Your browsing data,
+        downloads, bookmarks, PIN and settings stay on your device. Pages you visit and video files you
+        download come directly from the sites you choose. When Otter crashes, a crash report goes to
+        Google's Firebase Crashlytics for us to read (section 2). Some Android settings can share page
+        addresses with Google; see section 4.
     </div>
 
     <h2>1. Overview</h2>
@@ -81,9 +82,16 @@
        has no account of its own and no advertising.</p>
 
     <h2>2. Information We Collect</h2>
-    <p>We do not collect any personal information. We run no servers for Otter, receive no copy of
-       your browsing, downloads or backups, and do not know who uses the app. The app contains no
-       advertising SDK, no analytics, no crash-reporting service and no sign-in.</p>
+    <p>Otter does not collect personal information. We run no servers for Otter and receive no copy of
+       your browsing, downloads or backups. The app has no sign-in, no advertising SDK and no analytics.
+       The only data that reaches us is crash reports, described below.</p>
+    <p><strong>Crash reports.</strong> Otter uses Google's Firebase Crashlytics to learn when it crashes.
+       A report contains where in the app the crash happened (a stack trace), the app version, your device
+       model and operating system version, free memory and storage, the time, and a random installation ID
+       that is not linked to your name or account. Otter is written to keep web addresses, file names and
+       download details out of reports, but an error message can occasionally include part of one. Reports
+       are sent after a crash, and Google keeps them for 90 days. Crash reporting cannot be turned off in
+       the app yet.</p>
 
     <h2>3. Data Stored on Your Device</h2>
     <p>Otter keeps the following in its private storage on your device. None of it is sent to us.</p>
@@ -115,8 +123,9 @@
         <li><strong>Google Safe Browsing (Android):</strong> the Android WebView can check the addresses of
             pages you open against Google's Safe Browsing lists to warn you about known malware and phishing.
             This means those page addresses are sent to Google. Otter does not turn this off yet.</li>
+        <li><strong>Firebase Crashlytics:</strong> crash reports, described in section 2, sent to Google.</li>
     </ul>
-    <p>Otter does not contact any server of OsiVibeCode LLC.</p>
+    <p>Apart from crash reports, Otter does not contact any server of OsiVibeCode LLC.</p>
 
     <h2>5. Ad and Tracker Blocking</h2>
     <p>Otter blocks known advertising and tracking requests on your device, before they are sent. The
@@ -150,9 +159,9 @@
        it, and Otter does not encrypt it.</p>
 
     <h2>9. Third-Party Services</h2>
-    <p>Otter uses no third-party SDKs for advertising, analytics, crash reporting or sign-in. The only
-       outside services involved are the websites and video hosts you choose to use, and, on Android,
-       Google Safe Browsing (section 4). Otter is not made by or affiliated with any website or video
+    <p>Otter uses no third-party SDKs for advertising, analytics or sign-in. The outside services involved
+       are the websites and video hosts you choose to use, on Android Google Safe Browsing (section 4), and
+       Google's Firebase Crashlytics for crash reports (section 2). Otter is not made by or affiliated with any website or video
        service.</p>
 
     <h2>10. Data Retention &amp; Deletion</h2>
