@@ -124,8 +124,13 @@
             pages you open against Google's Safe Browsing lists to warn you about known malware and phishing.
             This means those page addresses are sent to Google. Otter does not turn this off yet.</li>
         <li><strong>Firebase Crashlytics:</strong> crash reports, described in section 2, sent to Google.</li>
+        <li><strong>Update checks (iOS):</strong> once the app is on the App Store, Otter asks Apple's App Store
+            lookup for the latest version, at most every 6 hours and when you open the app. The request holds only
+            Otter's App Store ID.</li>
+        <li><strong>Update checks (Android):</strong> Google Play checks for app updates through Google Play
+            services, as it does for every app installed from Google Play.</li>
     </ul>
-    <p>Apart from crash reports, Otter does not contact any server of OsiVibeCode LLC.</p>
+    <p>Apart from crash reports and update checks, Otter does not contact any server of OsiVibeCode LLC.</p>
 
     <h2>5. Ad and Tracker Blocking</h2>
     <p>Otter blocks known advertising and tracking requests on your device, before they are sent. The
@@ -161,7 +166,8 @@
     <h2>9. Third-Party Services</h2>
     <p>Otter uses no third-party SDKs for advertising, analytics or sign-in. The outside services involved
        are the websites and video hosts you choose to use, on Android Google Safe Browsing (section 4), and
-       Google's Firebase Crashlytics for crash reports (section 2). Otter is not made by or affiliated with any website or video
+       Google's Firebase Crashlytics for crash reports (section 2), and Apple's App Store and Google Play for
+       update checks (section 4). Otter is not made by or affiliated with any website or video
        service.</p>
 
     <h2>10. Data Retention &amp; Deletion</h2>
